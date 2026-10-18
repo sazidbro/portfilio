@@ -22,15 +22,25 @@
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="site-title" aria-label="Sazid Moontasir Homepage">SAZID MOONTASIR</a>
-      <nav class="main-nav" aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="education.html" class="active" aria-current="page">Education</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="nav-right-group">
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html" class="active" aria-current="page">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="theme-toggle-wrapper">
+          <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-label="Toggle dark mode">
+          <label for="theme-toggle" class="theme-toggle-btn" title="Toggle dark mode">
+            <span class="toggle-icon" aria-hidden="true">&#9680;</span>
+            <span class="toggle-dark-label">Dark</span>
+            <span class="toggle-light-label">Light</span>
+          </label>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -44,12 +54,12 @@
 
       <div class="education-list" role="feed" aria-label="Educational History">
         
-        <!-- Entry 1: Higher Education / Undergraduate -->
+        <!-- Entry 1: Current University - AUST -->
         <article class="education-item">
           <div class="education-logo-box">
             <img 
               src="assets/images/institutions/college_emblem.svg" 
-              alt="University emblem" 
+              alt="AUST emblem" 
               width="44" 
               height="44"
               loading="lazy"
@@ -57,24 +67,24 @@
           </div>
           <div class="education-details">
             <div class="institution-header">
-              <h2 class="institution-name">University / Higher Institute</h2>
-              <time class="education-dates">2024 &ndash; Present</time>
+              <h2 class="institution-name">Ahsanullah University of Science and Technology (AUST)</h2>
+              <time class="education-dates">2026 &ndash; Present</time>
             </div>
-            <p class="education-degree">Undergraduate Studies</p>
-            <p class="education-dept">Department of Computer Science &amp; Engineering</p>
+            <p class="education-degree">B.Sc. in Electrical and Electronic Engineering (EEE)</p>
+            <p class="education-dept">Department of Electrical &amp; Electronic Engineering</p>
             <p class="education-desc">
-              Focusing on computational logic, discrete mathematics, structural programming, 
-              and fundamentals of computer hardware and software systems.
+              Currently pursuing undergraduate studies in electrical and electronic engineering while actively exploring 
+              computer science fundamentals, structured programming, and practical software engineering.
             </p>
           </div>
         </article>
 
-        <!-- Entry 2: Higher Secondary Education -->
+        <!-- Entry 2: Khulna University -->
         <article class="education-item">
           <div class="education-logo-box">
             <img 
-              src="assets/images/institutions/school_emblem.svg" 
-              alt="College emblem" 
+              src="assets/images/institutions/college_emblem.svg" 
+              alt="Khulna University emblem" 
               width="44" 
               height="44"
               loading="lazy"
@@ -82,24 +92,49 @@
           </div>
           <div class="education-details">
             <div class="institution-header">
-              <h2 class="institution-name">Higher Secondary College</h2>
-              <time class="education-dates">2022 &ndash; 2024</time>
+              <h2 class="institution-name">Khulna University (KU)</h2>
+              <time class="education-dates">Jan 2026 &ndash; Jun 2026</time>
+            </div>
+            <p class="education-degree">Undergraduate Studies</p>
+            <p class="education-dept">Electronics and Communication Engineering (ECE)</p>
+            <p class="education-desc">
+              Completed initial undergraduate coursework in electronics and communication engineering 
+              prior to admission at AUST.
+            </p>
+          </div>
+        </article>
+
+        <!-- Entry 3: Higher Secondary College -->
+        <article class="education-item">
+          <div class="education-logo-box">
+            <img 
+              src="assets/images/institutions/institution_placeholder.svg" 
+              alt="Comilla Victoria Government College emblem" 
+              width="44" 
+              height="44"
+              loading="lazy"
+            >
+          </div>
+          <div class="education-details">
+            <div class="institution-header">
+              <h2 class="institution-name">Comilla Victoria Government College</h2>
+              <time class="education-dates">2023 &ndash; 2025</time>
             </div>
             <p class="education-degree">Higher Secondary Certificate (HSC)</p>
             <p class="education-dept">Science Group</p>
             <p class="education-desc">
-              Core curriculum in Higher Mathematics, Physics, Chemistry, and Information &amp; 
-              Communication Technology (ICT). Participated in science fairs and coding clubs.
+              Completed higher secondary education in Science with emphasis on Higher Mathematics, Physics, Chemistry, 
+              and Information &amp; Communication Technology (ICT).
             </p>
           </div>
         </article>
 
-        <!-- Entry 3: Secondary Education -->
+        <!-- Entry 4: Secondary School -->
         <article class="education-item">
           <div class="education-logo-box">
             <img 
               src="assets/images/institutions/institution_placeholder.svg" 
-              alt="Secondary school emblem" 
+              alt="Comilla Modern High School emblem" 
               width="44" 
               height="44"
               loading="lazy"
@@ -107,49 +142,19 @@
           </div>
           <div class="education-details">
             <div class="institution-header">
-              <h2 class="institution-name">Secondary School</h2>
-              <time class="education-dates">2017 &ndash; 2022</time>
+              <h2 class="institution-name">Comilla Modern High School</h2>
+              <time class="education-dates">2021 &ndash; 2023</time>
             </div>
             <p class="education-degree">Secondary School Certificate (SSC)</p>
             <p class="education-dept">Science Group</p>
             <p class="education-desc">
-              General science discipline with distinctions in mathematics and science subjects. 
-              Developed an early interest in computing and web technologies.
-            </p>
-          </div>
-        </article>
-
-        <!-- Entry 4: Courses & Certifications -->
-        <article class="education-item">
-          <div class="education-logo-box">
-            <img 
-              src="assets/images/institutions/institution_placeholder.svg" 
-              alt="Certification emblem" 
-              width="44" 
-              height="44"
-              loading="lazy"
-            >
-          </div>
-          <div class="education-details">
-            <div class="institution-header">
-              <h2 class="institution-name">Independent Study &amp; Technical Certifications</h2>
-              <time class="education-dates">2023 &ndash; Present</time>
-            </div>
-            <p class="education-degree">Self-Directed Courses</p>
-            <p class="education-dept">Web Development &amp; Algorithmic Foundations</p>
-            <p class="education-desc">
-              Coursework in semantic HTML5 architecture, modern CSS layout specifications, 
-              version control workflows with Git, and procedural programming in C/C++.
+              Completed secondary schooling in the Science discipline with academic focus on general mathematics, 
+              physical sciences, and foundational studies.
             </p>
           </div>
         </article>
 
       </div>
-
-      <!-- Editable placeholder notice -->
-      <aside class="notice-box" aria-label="Editor notice">
-        <p><strong>Note:</strong> All institution names, dates, and descriptions above are structured templates designed to be updated directly in <code>education.html</code>.</p>
-      </aside>
     </div>
   </main>
 
@@ -157,7 +162,6 @@
   <footer class="site-footer">
     <div class="container">
       <p class="footer-text">&copy; 2026 Sazid Moontasir</p>
-      <p class="footer-subtext">PERSONAL PORTFOLIO</p>
     </div>
   </footer>
 </body>

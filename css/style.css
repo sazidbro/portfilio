@@ -105,6 +105,13 @@ body {
   opacity: 0.75;
 }
 
+.nav-right-group {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
 .main-nav ul {
   display: flex;
   list-style: none;
@@ -132,6 +139,96 @@ body {
   color: var(--text);
   font-weight: 700;
   border-bottom-color: var(--text);
+}
+
+/* Theme Toggle (Pure CSS3 - Zero JavaScript) */
+.theme-toggle-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.theme-toggle-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--secondary-text);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.6rem;
+  background-color: var(--background);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.theme-toggle-btn:hover {
+  color: var(--text);
+  border-color: var(--text);
+  background-color: var(--hover-background);
+}
+
+.theme-toggle-input:focus-visible + .theme-toggle-btn {
+  outline: 2px dashed var(--text);
+  outline-offset: 3px;
+}
+
+.toggle-icon {
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.toggle-dark-label {
+  display: inline;
+}
+
+.toggle-light-label {
+  display: none;
+}
+
+/* ==========================================================================
+   DARK THEME VIA CSS :has() SELECTOR
+   ========================================================================== */
+html:has(#theme-toggle:checked) {
+  --background: #111111;
+  --text: #f5f5f5;
+  --secondary-text: #999999;
+  --border: #2a2a2a;
+  --hover-background: #1c1c1c;
+}
+
+html:has(#theme-toggle:checked) .toggle-dark-label {
+  display: none;
+}
+
+html:has(#theme-toggle:checked) .toggle-light-label {
+  display: inline;
+}
+
+html:has(#theme-toggle:checked) .profile-img {
+  filter: grayscale(100%) contrast(110%) brightness(0.95);
+}
+
+html:has(#theme-toggle:checked) .education-logo-box img {
+  filter: invert(1) brightness(0.95);
+}
+
+html:has(#theme-toggle:checked) .contact-icon img {
+  filter: invert(1);
+}
+
+html:has(#theme-toggle:checked) .skill-row {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Main Content Area */
@@ -736,6 +833,13 @@ button:focus-visible {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-md);
+  }
+
+  .nav-right-group {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-sm);
   }
 
   .main-nav ul {

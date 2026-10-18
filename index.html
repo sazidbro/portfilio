@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sazid Moontasir | Minimal Typewriter Portfolio</title>
+  <title>Sazid Moontasir</title>
   <meta name="description" content="Personal portfolio and typed journal of Sazid Moontasir, student interested in technology, programming, and continuous learning.">
   <meta name="author" content="Sazid Moontasir">
   
   <!-- Open Graph Metadata -->
-  <meta property="og:title" content="Sazid Moontasir | Minimal Typewriter Portfolio">
+  <meta property="og:title" content="Sazid Moontasir">
   <meta property="og:description" content="Personal portfolio and typed journal of Sazid Moontasir, student interested in technology, programming, and continuous learning.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/profile.jpg">
@@ -24,15 +24,25 @@
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="site-title" aria-label="Sazid Moontasir Homepage">SAZID MOONTASIR</a>
-      <nav class="main-nav" aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="nav-right-group">
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="theme-toggle-wrapper">
+          <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-label="Toggle dark mode">
+          <label for="theme-toggle" class="theme-toggle-btn" title="Toggle dark mode">
+            <span class="toggle-icon" aria-hidden="true">&#9680;</span>
+            <span class="toggle-dark-label">Dark</span>
+            <span class="toggle-light-label">Light</span>
+          </label>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -73,13 +83,16 @@
               projects, and experiences.
             </p>
             <p class="bio-paragraph">
-              My philosophy centers around simplicity, durability, and craftsmanship. I appreciate 
-              clean typography, unbloated code, and building software that respects the reader's attention.
+              I am currently pursuing a degree in Electrical and Electronic Engineering (EEE) at 
+              Ahsanullah University of Science and Technology (AUST). Although my academic background 
+              is in EEE, my passion for programming and technology motivates me to explore computer 
+              science beyond the university curriculum.
             </p>
             <p class="bio-paragraph">
-              Currently, I am focusing on deepening my foundational computer science concepts, exploring 
-              structured programming, and developing minimalist web systems that require no excessive 
-              layers or dependencies.
+              I am independently learning programming, strengthening my computer science fundamentals, 
+              and developing practical skills through personal projects. My goal is to bridge the gap 
+              between EEE and CSE, combining knowledge from both fields to build innovative solutions 
+              and take my future career to the next level.
             </p>
           </div>
 
@@ -103,7 +116,6 @@
   <footer class="site-footer">
     <div class="container">
       <p class="footer-text">&copy; 2026 Sazid Moontasir</p>
-      <p class="footer-subtext">PERSONAL PORTFOLIO</p>
     </div>
   </footer>
 </body>
