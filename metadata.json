@@ -2,5 +2,7 @@
   "name": "Sazid Moontasir - Minimal Typewriter Portfolio",
   "description": "A minimal, monochrome personal portfolio and journal for Sazid Moontasir with a vintage typewriter aesthetic.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
