@@ -8,7 +8,7 @@ A clean, minimalist, and typography-focused personal portfolio and digital journ
 
 - **Pure HTML5 & CSS3**: No JavaScript, no TypeScript, no frameworks (no React/Vue/Tailwind/Bootstrap), no Node.js runtime, no build tools.
 - **True Standalone Portability**: Double-click `index.html` in any browser on any computer (offline or online) and it works instantly.
-- **Typewriter Journal Aesthetic**: Monospace typography, hairline borders, generous whitespace, stark monochrome palette (`#111111` and `#ffffff`), and no AI slop (no gradients, pills, or glassmorphism).
+- **Typewriter Journal Aesthetic**: Monospace typography, hairline borders, generous whitespace, stark monochrome palette (`#111111` and `#ffffff`), with a disciplined, print-inspired look — no gradients, pills, or glassmorphism.
 - **CSS-Only Typewriter Headline**: Subtle `@keyframes` typing animation with blinking cursor for the introductory greeting, fully respecting `prefers-reduced-motion`.
 - **Zero-Form Privacy Contact Page**: Direct monochrome social links and email link (`mailto:` protocol) with clean local SVG icons—no intrusive forms or backend tracking.
 - **100% GitHub Pages Ready**: Built with robust relative paths and includes `.nojekyll` for instant one-click deployment.
