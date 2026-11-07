@@ -1,6 +1,6 @@
 # Sazid Moontasir — Minimal Typewriter Portfolio
 
-A clean, minimalist, and typography-focused personal portfolio and digital journal for **Sazid Moontasir**. Inspired by the tactile elegance of vintage typewriter manuscripts, this website is built strictly with pure **HTML5** and **CSS3**, requiring zero dependencies, zero build steps, and zero JavaScript.
+A clean, minimalist, and typography-focused personal portfolio and digital journal for **Sazid Moontasir**. Inspired by the tactile elegance of vintage typewriter manuscripts, this website is built strictly with pure **HTML5** and **CSS3**, requiring zero dependencies and zero build steps — the only JavaScript is a tiny snippet that remembers the dark/light choice across pages.
 
 ---
 
